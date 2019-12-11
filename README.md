@@ -13,7 +13,7 @@ import duplicates from 'duplicates'
 
 const a = ['a', 'b', 'c', 'd']
 const b = ['a', 'b']
-const b = ['d', 'e', 'f']
+const c = ['d', 'e', 'f']
 
 duplicates.find(a, b, c) // ['a', 'b', 'd']
 ```
@@ -36,7 +36,7 @@ import duplicates from 'duplicates'
 
 const a = ['a', 'b', 'c', 'd']
 const b = ['a', 'b']
-const b = ['d', 'e', 'f']
+const c = ['d', 'e', 'f']
 
 duplicates.remove('c', 'e', 'f') // ['a', 'b', 'd']
 ```
