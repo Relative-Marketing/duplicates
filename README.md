@@ -1,6 +1,6 @@
 # Duplicates
 
-This provides methods for working with collections of arrays.
+This provides methods for working finding and removing duplicate items across arrays.
 
 ## duplicates.find()
 
