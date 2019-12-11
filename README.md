@@ -38,7 +38,7 @@ const a = ['a', 'b', 'c', 'd']
 const b = ['a', 'b']
 const c = ['d', 'e', 'f']
 
-duplicates.remove('c', 'e', 'f') // ['a', 'b', 'd']
+duplicates.remove(a, b, c) // ['c', 'e', 'f']
 ```
 
 ```
@@ -48,5 +48,5 @@ const a = ['a', 'b', 'c', 'd']
 const b = ['a', 'b']
 const b = ['d', 'e', 'f']
 
-remove('c', 'e', 'f') // ['a', 'b', 'd']
+remove(a, b, c) // ['c', 'e', 'f']
 ```
