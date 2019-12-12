@@ -9,7 +9,7 @@ Will return an array containing all values that exist more than once or an empty
 Usage:
 
 ```
-import duplicates from 'duplicates'
+import duplicates from '@relativemarketing/duplicates'
 
 const a = ['a', 'b', 'c', 'd']
 const b = ['a', 'b']
@@ -19,7 +19,7 @@ duplicates.find(a, b, c) // ['a', 'b', 'd']
 ```
 
 ```
-import { find } from 'duplicates'
+import { find } from '@relativemarketing/duplicates'
 
 const a = ['a', 'b', 'c']
 const b = ['a', 'b', 'd']
@@ -32,7 +32,7 @@ find(a, b) // ['a', 'b']
 Will remove any items that appear more than once.
 
 ```
-import duplicates from 'duplicates'
+import duplicates from '@relativemarketing/duplicates'
 
 const a = ['a', 'b', 'c', 'd']
 const b = ['a', 'b']
@@ -42,11 +42,21 @@ duplicates.remove(a, b, c) // ['c', 'e', 'f']
 ```
 
 ```
-import {remove} from 'duplicates'
+import {remove} from '@relativemarketing/duplicates'
 
 const a = ['a', 'b', 'c', 'd']
 const b = ['a', 'b']
 const b = ['d', 'e', 'f']
 
 remove(a, b, c) // ['c', 'e', 'f']
+```
+
+## duplicates.strip(unwantedItems).from(wantedItems)
+
+Will strip all unwanted items from a list of wanted items
+
+```
+import duplicates from '@relativemarketing/duplicates'
+
+duplicates.strip([1,2]).from([1,2,3]) // [3]
 ```
