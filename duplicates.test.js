@@ -1,4 +1,5 @@
-import duplicates, { find, validateArguments, remove } from "./duplicates"
+import duplicates, { find, remove } from "./duplicates"
+import { validateArguments } from "./utils"
 
 describe("duplicates.validateArguments()", () => {
   it("Arguments should only accept arrays", () => {
@@ -69,5 +70,11 @@ describe("duplicates", () => {
   })
   it("should have a remove method", () => {
     expect(typeof duplicates.remove).toBe("function")
+  })
+})
+
+describe("duplicates.strip($unwanted).from($fullList)", () => {
+  it("should take the full list and remove unwanted items", () => {
+    expect(duplicates.strip.unwanted([1, 2]).from([1, 2, 3])).toEqual([3])
   })
 })
