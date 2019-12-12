@@ -1,6 +1,6 @@
 {
   "name": "@relativemarketing/duplicates",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This provides methods for working finding and removing duplicate items across arrays.",
   "main": "duplicates.js",
   "scripts": {
